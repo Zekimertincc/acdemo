@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Scores & Exercise Count</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .scoreboard {
+            margin: 20px;
+            max-width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Egzersiz sayıları</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Exercise Count</th>
+                    <th>Skorlar</th>
+                </tr>
+            </thead>
+            <tbody id="users-scores-list">
+                <!-- User scores and exercise counts will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="scoreboard-score">
+        <h1>Skor tablosu</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Scores</th>
+                </tr>
+            </thead>
+            <tbody id="user-scores">
+                <!-- User scores will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="/public/javascripts/adminscoreboard.js"></script>
+</body>
+</html>
